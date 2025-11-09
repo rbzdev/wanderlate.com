@@ -1,0 +1,222 @@
+{
+    "Home": {
+        "title": "Bonjour le monde!"
+    },
+    "NavBar": {
+        "getApp": "Obtenir l'app",
+        "publishListing": "Publier votre annonce",
+        "help": "Assistance",
+        "trips": "Voyages",
+        "signIn": "Se connecter"
+    },
+    "Book": {
+        "tabs": {
+            "stays": "Séjours",
+            "flights": "Vols",
+            "cars": "Voitures",
+            "packages": "Formules",
+            "activities": "Activités"
+        },
+        "labels": {
+            "destination": "Destination",
+            "checkInOut": "Arrivée / Départ",
+            "travelers": "Voyageurs"
+        },
+        "placeholders": {
+            "whereTo": "Où allez-vous ?",
+            "selectDates": "Sélectionner des dates"
+        },
+        "travelers": {
+            "traveler": "voyageur",
+            "travelers": "voyageurs",
+            "room": "chambre",
+            "rooms": "chambres",
+            "adults": "Adultes",
+            "children": "Enfants",
+            "childrenAge": "(0 à 17 ans)",
+            "roomsLabel": "Chambres"
+        },
+        "buttons": {
+            "search": "Rechercher"
+        },
+        "comingSoon": "À venir prochainement"
+    },
+    "PropertyTypes": {
+        "title": "Types de propriétés",
+        "properties": {
+            "appartement": "Appartement",
+            "ferme": "Ferme",
+            "bateau": "Bateau maison",
+            "appart-hotel": "Appart'Hotel",
+            "spa": "Spa"
+        }
+    },
+    "Header": {
+        "memberBenefits": {
+            "title": "Économisez 10% minimum sur plus de 100 000 hôtels dans le monde grâce aux Prix membres.",
+            "subtitle": "Créez un compte gratuit pour accéder à ces prix exclusifs et bien plus encore.",
+            "signIn": "Se connecter"
+        },
+        "advantages": {
+            "flightAlerts": "Obtenez des alertes si le prix des vols baisse",
+            "comboSavings": "Vous pouvez faire des économies en combinant vol et hôtel",
+            "memberDiscounts": "Les membres économisent 10 % ou plus sur plus de 100 000 hôtels dans le monde"
+        }
+    },
+    "Login": {
+        "title": "Connexion",
+        "subtitle": "Connectez-vous à votre compte Wanderlate",
+        "email": "Email",
+        "emailPlaceholder": "votre@email.com",
+        "password": "Mot de passe",
+        "passwordPlaceholder": "Votre mot de passe",
+        "rememberMe": "Se souvenir de moi",
+        "forgotPassword": "Mot de passe oublié ?",
+        "signIn": "Se connecter",
+        "signingIn": "Connexion en cours...",
+        "orContinueWith": "Ou",
+        "continueWithGoogle": "Continuer avec Google",
+        "noAccount": "Pas encore de compte ?",
+        "createAccount": "Créer un compte"
+    },
+    "SignUp": {
+        "title": "Créer un compte",
+        "subtitle": "Rejoignez Wanderlate et commencez votre voyage",
+        "personalInfo": "Informations personnelles",
+        "firstName": "Prénom",
+        "firstNamePlaceholder": "Votre prénom",
+        "lastName": "Nom de famille",
+        "lastNamePlaceholder": "Votre nom de famille",
+        "email": "Email",
+        "emailPlaceholder": "votre@email.com",
+        "phone": "Téléphone",
+        "phonePlaceholder": "6 12 34 56 78",
+        "phoneFormat": "Format: 6 12 34 56 78",
+        "birthDate": "Date de naissance",
+        "day": "Jour",
+        "month": "Mois",
+        "year": "Année",
+        "preferences": "Préférences",
+        "country": "Pays",
+        "countryPlaceholder": "Sélectionnez votre pays",
+        "language": "Langue",
+        "languagePlaceholder": "Sélectionnez votre langue",
+        "currency": "Devise",
+        "currencyPlaceholder": "Sélectionnez votre devise",
+        "accountType": "Type de compte",
+        "traveler": "Voyageur",
+        "travelerDesc": "Parfait pour réserver des hébergements uniques et découvrir de nouvelles destinations.",
+        "host": "Hôte",
+        "hostDesc": "Idéal pour louer votre propriété et accueillir des voyageurs du monde entier.",
+        "security": "Sécurité",
+        "password": "Mot de passe",
+        "passwordPlaceholder": "Minimum 6 caractères",
+        "passwordRequirements": "Le mot de passe doit respecter les conditions suivantes :",
+        "passwordMinLength": "Au moins 6 caractères",
+        "passwordNumber": "Au moins 1 chiffre",
+        "passwordLowercase": "Au moins 1 caractère minuscule",
+        "passwordUppercase": "Au moins 1 caractère majuscule",
+        "passwordSpecial": "Au moins 1 caractère spécial (#?!@$%^&*-)",
+        "confirmPassword": "Confirmer le mot de passe",
+        "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+        "acceptTerms": "J'accepte les conditions d'utilisation et la politique de confidentialité",
+        "acceptMarketing": "J'accepte de recevoir des communications marketing de Wanderlate",
+        "createAccount": "Créer mon compte",
+        "creating": "Création en cours",
+        "accountCreatedSuccess": "Compte créé avec succès !",
+        "or": "ou",
+        "signUpWithGoogle": "S'inscrire avec Google",
+        "hasAccount": "Déjà un compte ?",
+        "signIn": "Se connecter"
+    },
+    "Dashboard": {
+        "notAuthenticated": {
+            "title": "Authentification Requise",
+            "description": "Vous devez être connecté pour accéder à votre tableau de bord. Veuillez vous connecter pour continuer ou créer un nouveau compte.",
+            "login": "Se Connecter",
+            "signup": "Créer un Compte"
+        },
+        "welcome": {
+            "greeting": "Bon retour",
+            "subtitle": "Prêt pour votre prochaine aventure ?",
+            "logout": "Déconnexion",
+            "loggingOut": "Déconnexion..."
+        },
+        "stats": {
+            "totalTrips": "Total Voyages",
+            "upcomingTrips": "À venir",
+            "completedTrips": "Terminés",
+            "totalSpent": "Total Dépensé"
+        },
+        "quickActions": {
+            "title": "Actions Rapides",
+            "newTrip": {
+                "title": "Nouveau Voyage",
+                "description": "Commencez à planifier votre prochaine aventure"
+            },
+            "searchFlights": {
+                "title": "Rechercher des Vols",
+                "description": "Trouvez les meilleures offres de vols",
+                "comingSoon": "Bientôt disponible"
+            },
+            "searchStays": {
+                "title": "Trouver un Hébergement",
+                "description": "Découvrez des hébergements uniques"
+            },
+            "profile": {
+                "title": "Mon Profil",
+                "description": "Gérez les paramètres de votre compte"
+            }
+        },
+        "recentTrips": {
+            "title": "Vos Voyages",
+            "viewAll": "Voir tous les voyages",
+            "empty": {
+                "title": "Aucun voyage pour le moment",
+                "description": "Commencez à planifier votre première aventure et créez des souvenirs inoubliables",
+                "cta": "Planifier Votre Premier Voyage"
+            }
+        },
+        "tripCard": {
+            "status": {
+                "planning": "Planification",
+                "confirmed": "Confirmé",
+                "completed": "Terminé",
+                "cancelled": "Annulé"
+            },
+            "travelers": "{count, plural, =1 {voyageur} other {voyageurs}}",
+            "viewDetails": "Voir les détails"
+        },
+        "comingSoonBadge": "À venir"
+    },
+    "Footer": {
+        "company": {
+            "title": "Entreprise",
+            "about": "À propos",
+            "careers": "Carrières",
+            "affiliates": "Affiliés",
+            "press": "Salle de presse"
+        },
+        "legal": {
+            "title": "Juridique et confidentialité",
+            "notices": "Mentions légales",
+            "terms": "Conditions générales",
+            "termsOfSale": "Conditions de vente",
+            "privacy": "Politique de confidentialité",
+            "cookies": "Déclaration sur les cookies",
+            "antiDiscrimination": "Charte anti-discrimination"
+        },
+        "explore": {
+            "title": "Explorer Wanderlate.com",
+            "listProperty": "Publier votre annonce",
+            "bookConfidence": "Réserver en toute confiance",
+            "trustSafety": "Confiance et sécurité",
+            "partnerResources": "Ressources partenaires",
+            "vacationGuides": "Guides de location de vacances",
+            "travelCards": "Cartes de crédit voyage"
+        },
+        "copyright": "© {year} Wanderlate, LTD – Tous droits réservés.",
+        "trademark": "Wanderlate et son logo sont des marques déposées.",
+        "disclaimer": "Wanderlate, LTD n'est pas responsable du contenu des sites externes."
+    }
+}

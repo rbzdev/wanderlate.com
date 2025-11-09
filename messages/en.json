@@ -1,0 +1,222 @@
+{
+    "Home": {
+        "title": "Hello World!"
+    },
+    "NavBar": {
+        "getApp": "Get the app",
+        "publishListing": "List your property",
+        "help": "Support",
+        "trips": "Trips",
+        "signIn": "Log in"
+    },
+    "Book": {
+        "tabs": {
+            "stays": "Stays",
+            "flights": "Flights",
+            "cars": "Cars",
+            "packages": "Packages",
+            "activities": "Activities"
+        },
+        "labels": {
+            "destination": "Destination",
+            "checkInOut": "Check-in / Check-out",
+            "travelers": "Travelers"
+        },
+        "placeholders": {
+            "whereTo": "Where are you going?",
+            "selectDates": "Select dates"
+        },
+        "travelers": {
+            "traveler": "traveler",
+            "travelers": "travelers",
+            "room": "room",
+            "rooms": "rooms",
+            "adults": "Adults",
+            "children": "Children",
+            "childrenAge": "(0 to 17 years)",
+            "roomsLabel": "Rooms"
+        },
+        "buttons": {
+            "search": "Search"
+        },
+        "comingSoon": "Coming soon"
+    },
+    "PropertyTypes": {
+        "title": "Property Types",
+        "properties": {
+            "appartement": "Apartment",
+            "ferme": "Farm",
+            "bateau": "Houseboat",
+            "appart-hotel": "Serviced Apartment",
+            "spa": "Spa"
+        }
+    },
+    "Header": {
+        "memberBenefits": {
+            "title": "Save at least 10% on over 100,000 hotels worldwide with Member Prices.",
+            "subtitle": "Create a free account to access these exclusive prices and much more.",
+            "signIn": "Log in"
+        },
+        "advantages": {
+            "flightAlerts": "Get alerts if flight prices drop",
+            "comboSavings": "You can save by combining flight and hotel",
+            "memberDiscounts": "Members save 10% or more on over 100,000 hotels worldwide"
+        }
+    },
+    "Login": {
+        "title": "Login",
+        "subtitle": "Log in to your Wanderlate account",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "password": "Password",
+        "passwordPlaceholder": "Your password",
+        "rememberMe": "Remember me",
+        "forgotPassword": "Forgot password?",
+        "signIn": "Log In",
+        "signingIn": "Logging in...",
+        "orContinueWith": "Or",
+        "continueWithGoogle": "Continue with Google",
+        "noAccount": "Don't have an account?",
+        "createAccount": "Create account"
+    },
+    "SignUp": {
+        "title": "Create account",
+        "subtitle": "Join Wanderlate and start your journey",
+        "personalInfo": "Personal information",
+        "firstName": "First name",
+        "firstNamePlaceholder": "Your first name",
+        "lastName": "Last name",
+        "lastNamePlaceholder": "Your last name",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "phone": "Phone",
+        "phonePlaceholder": "6 12 34 56 78",
+        "phoneFormat": "Format: 6 12 34 56 78",
+        "birthDate": "Date of birth",
+        "day": "Day",
+        "month": "Month",
+        "year": "Year",
+        "preferences": "Preferences",
+        "country": "Country",
+        "countryPlaceholder": "Select your country",
+        "language": "Language",
+        "languagePlaceholder": "Select your language",
+        "currency": "Currency",
+        "currencyPlaceholder": "Select your currency",
+        "accountType": "Account type",
+        "traveler": "Traveler",
+        "travelerDesc": "Perfect for booking unique accommodations and discovering new destinations.",
+        "host": "Host",
+        "hostDesc": "Ideal for renting your property and welcoming travelers from around the world.",
+        "security": "Security",
+        "password": "Password",
+        "passwordPlaceholder": "Minimum 6 characters",
+        "passwordRequirements": "Password must meet the following requirements:",
+        "passwordMinLength": "At least 6 characters",
+        "passwordNumber": "At least 1 digit",
+        "passwordLowercase": "At least 1 lowercase character",
+        "passwordUppercase": "At least 1 uppercase character",
+        "passwordSpecial": "At least 1 special character (#?!@$%^&*-)",
+        "confirmPassword": "Confirm password",
+        "confirmPasswordPlaceholder": "Confirm your password",
+        "acceptTerms": "I accept the terms of use and privacy policy",
+        "acceptMarketing": "I agree to receive marketing communications from Wanderlate",
+        "createAccount": "Create my account",
+        "creating": "Creating",
+        "accountCreatedSuccess": "Account created successfully!",
+        "or": "or",
+        "signUpWithGoogle": "Sign up with Google",
+        "hasAccount": "Already have an account?",
+        "signIn": "Log in"
+    },
+    "Dashboard": {
+        "notAuthenticated": {
+            "title": "Authentication Required",
+            "description": "You need to be logged in to access your dashboard. Please sign in to continue or create a new account.",
+            "login": "Log In",
+            "signup": "Create Account"
+        },
+        "welcome": {
+            "greeting": "Welcome back",
+            "subtitle": "Ready for your next adventure?",
+            "logout": "Log out",
+            "loggingOut": "Logging out..."
+        },
+        "stats": {
+            "totalTrips": "Total Trips",
+            "upcomingTrips": "Upcoming",
+            "completedTrips": "Completed",
+            "totalSpent": "Total Spent"
+        },
+        "quickActions": {
+            "title": "Quick Actions",
+            "newTrip": {
+                "title": "Plan New Trip",
+                "description": "Start planning your next adventure"
+            },
+            "searchFlights": {
+                "title": "Search Flights",
+                "description": "Find the best flight deals",
+                "comingSoon": "Coming soon"
+            },
+            "searchStays": {
+                "title": "Find Stays",
+                "description": "Discover unique accommodations"
+            },
+            "profile": {
+                "title": "My Profile",
+                "description": "Manage your account settings"
+            }
+        },
+        "recentTrips": {
+            "title": "Your Trips",
+            "viewAll": "View all trips",
+            "empty": {
+                "title": "No trips yet",
+                "description": "Start planning your first adventure and create unforgettable memories",
+                "cta": "Plan Your First Trip"
+            }
+        },
+        "tripCard": {
+            "status": {
+                "planning": "Planning",
+                "confirmed": "Confirmed",
+                "completed": "Completed",
+                "cancelled": "Cancelled"
+            },
+            "travelers": "{count, plural, =1 {traveler} other {travelers}}",
+            "viewDetails": "View details"
+        },
+        "comingSoonBadge": "Coming soon"
+    },
+    "Footer": {
+        "company": {
+            "title": "Company",
+            "about": "About",
+            "careers": "Careers",
+            "affiliates": "Affiliates",
+            "press": "Press room"
+        },
+        "legal": {
+            "title": "Legal and privacy",
+            "notices": "Legal notices",
+            "terms": "Terms",
+            "termsOfSale": "Terms of sale",
+            "privacy": "Privacy policy",
+            "cookies": "Cookie statement",
+            "antiDiscrimination": "Anti-discrimination charter"
+        },
+        "explore": {
+            "title": "Explore Wanderlate.com",
+            "listProperty": "List your property",
+            "bookConfidence": "Book with confidence",
+            "trustSafety": "Trust and safety",
+            "partnerResources": "Partner resources",
+            "vacationGuides": "Vacation rental guides",
+            "travelCards": "Travel credit cards"
+        },
+        "copyright": "© {year} Wanderlate, LTD – All rights reserved.",
+        "trademark": "Wanderlate and its logo are registered trademarks.",
+        "disclaimer": "Wanderlate, LTD is not responsible for the content of external sites."
+    }
+}
