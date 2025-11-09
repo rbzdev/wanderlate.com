@@ -7,6 +7,7 @@ import { QuickActionsSection } from './components/QuickActionsSection';
 import { RecentTripsSection } from './components/RecentTripsSection';
 
 /**
+ * 
  * Dashboard page - Server Component
  * Fetches user data and trips from database
  */
