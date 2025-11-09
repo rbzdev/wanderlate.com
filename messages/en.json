@@ -7,7 +7,9 @@
         "publishListing": "List your property",
         "help": "Support",
         "trips": "Trips",
-        "signIn": "Log in"
+        "signIn": "Log in",
+        "comingSoon": "Coming Soon",
+        "comingSoonDesc": "Our mobile app is currently in development. Stay tuned for updates!"
     },
     "Book": {
         "tabs": {
@@ -50,6 +52,11 @@
             "appart-hotel": "Serviced Apartment",
             "spa": "Spa"
         }
+    },
+    "WaterfrontWinners": {
+        "title": "Waterfront winners",
+        "description": "Relax, unwind and have fun by the water with your crew.",
+        "cta": "Book a waterfront stay"
     },
     "Header": {
         "memberBenefits": {

@@ -27,7 +27,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={` antialiased overflow-x-hidden `}
+        className={`overflow-x-hidden max-w-7xl mx-auto antialiased `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

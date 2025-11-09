@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Book from "./Book";
 import { Button } from "../ui/button";
@@ -28,7 +30,7 @@ export default function Header() {
         }
     ]
     return (
-        <header className="w-full px-4 sm:px-6 pt-24 pb-16  space-y-8">
+        <header className="w-full pt-8 pb-16  space-y-8">
 
             {/* Book Component */}
             <Book />

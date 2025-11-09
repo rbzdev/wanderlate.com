@@ -42,7 +42,7 @@ export default function PropertyTypes() {
     const t = useTranslations("PropertyTypes");
 
     return (
-        <div className="w-full max-w-7xl mx-auto px-4 py-2">
+        <div className="w-full max-w-7xl mx-auto py-2">
             <h2 className="text-2xl font-bold text-black dark:text-white mb-8">
                 {t('title')}
             </h2>

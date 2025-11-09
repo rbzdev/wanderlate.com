@@ -7,7 +7,9 @@
         "publishListing": "Publier votre annonce",
         "help": "Assistance",
         "trips": "Voyages",
-        "signIn": "Se connecter"
+        "signIn": "Se connecter",
+        "comingSoon": "Bientôt disponible",
+        "comingSoonDesc": "Notre application mobile est actuellement en développement. Restez à l'écoute pour les mises à jour !"
     },
     "Book": {
         "tabs": {
@@ -50,6 +52,11 @@
             "appart-hotel": "Appart'Hotel",
             "spa": "Spa"
         }
+    },
+    "WaterfrontWinners": {
+        "title": "Gagnants du bord de l'eau",
+        "description": "Détendez-vous, relaxez-vous et amusez-vous au bord de l'eau avec votre équipage.",
+        "cta": "Réserver un séjour au bord de l'eau"
     },
     "Header": {
         "memberBenefits": {

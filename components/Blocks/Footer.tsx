@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-white dark:bg-zinc-900 ">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto py-12">
         {/* Logo */}
         <div className="mb-8">
           <Link href="/" className="inline-block">
