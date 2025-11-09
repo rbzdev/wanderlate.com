@@ -1,14 +1,22 @@
 'use client';
 
-import NavBar from "@/components/Blocks/NavBar";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations, useLocale } from 'next-intl';
 import { Icon } from "@iconify/react";
 import { useRouter } from "next/navigation";
+
+// Block
+import NavBar from "@/components/Blocks/NavBar";
+import Footer from "@/components/Blocks/Footer";
+
+// Components
+import { InputWithIcon } from "@/components/ui/input-with-icon";
+import { PasswordInput } from "@/components/ui/password-input";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 export default function LoginPage() {
     const t = useTranslations("Login");
@@ -194,6 +202,7 @@ export default function LoginPage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

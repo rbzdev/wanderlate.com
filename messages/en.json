@@ -91,7 +91,7 @@
         "emailPlaceholder": "your@email.com",
         "phone": "Phone",
         "phonePlaceholder": "6 12 34 56 78",
-        "phoneFormat": "Format: 6 12 34 56 78",
+        "phoneFormat": "Enter your phone number",
         "birthDate": "Date of birth",
         "day": "Day",
         "month": "Month",

@@ -1,16 +1,28 @@
 'use client';
 
-import NavBar from "@/components/Blocks/NavBar";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
+
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations, useLocale } from 'next-intl';
 import { Icon } from "@iconify/react";
-import { Check, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { RegisterResponse } from "@/lib/validations/auth";
+
+// Block
+import NavBar from "@/components/Blocks/NavBar";
+import Footer from "@/components/Blocks/Footer";
+
+// Components
+import { Input } from "@/components/ui/input";
+import { InputWithIcon } from "@/components/ui/input-with-icon";
+import { PasswordInput } from "@/components/ui/password-input";
+import { PasswordStrengthIndicator, validatePassword, type PasswordValidation } from "@/components/ui/password-strength-indicator";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { CountrySelect } from "@/components/ui/country-select";
+import { PhoneCodeSelect } from "@/components/ui/phone-code-select";
+import { LanguageSelect } from "@/components/ui/language-select";
+import { CurrencySelect } from "@/components/ui/currency-select";
 
 export default function SignUpPage() {
     const t = useTranslations("SignUp");
@@ -22,6 +34,7 @@ export default function SignUpPage() {
         lastName: "",
         email: "",
         phone: "",
+        phoneCountry: "FR", // Nouveau: pays pour l'indicatif
         birthDay: "",
         birthMonth: "",
         birthYear: "",
@@ -39,7 +52,7 @@ export default function SignUpPage() {
     const [error, setError] = useState<string | null>(null);
     const [success, setSuccess] = useState(false);
 
-    const [passwordValidation, setPasswordValidation] = useState({
+    const [passwordValidation, setPasswordValidation] = useState<PasswordValidation>({
         minLength: false,
         hasNumber: false,
         hasLowercase: false,
@@ -49,13 +62,7 @@ export default function SignUpPage() {
 
     const handlePasswordChange = (password: string) => {
         setFormData({ ...formData, password });
-        setPasswordValidation({
-            minLength: password.length >= 6,
-            hasNumber: /\d/.test(password),
-            hasLowercase: /[a-z]/.test(password),
-            hasUppercase: /[A-Z]/.test(password),
-            hasSpecial: /[#?!@$%^&*-]/.test(password)
-        });
+        setPasswordValidation(validatePassword(password));
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -95,7 +102,7 @@ export default function SignUpPage() {
             setSuccess(true);
 
             // Redirect to dashboard
-            router.push(`/${locale}/account`);
+            router.push(`/${locale}/dashboard`);
             
             // // Redirect to login page after 2 seconds
             // setTimeout(() => {
@@ -137,7 +144,7 @@ export default function SignUpPage() {
                         {error && (
                             <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
                                 <p className="text-sm text-red-600 dark:text-red-400 flex items-center gap-2">
-                                    <X className="w-4 h-4" />
+                                    <Icon icon="lucide:x" className="w-4 h-4" />
                                     {error}
                                 </p>
                             </div>
@@ -147,7 +154,7 @@ export default function SignUpPage() {
                         {success && (
                             <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
                                 <p className="text-sm text-green-600 dark:text-green-400 flex items-center gap-2">
-                                    <Check className="w-4 h-4" />
+                                    <Icon icon="lucide:check" className="w-4 h-4" />
                                     {t('accountCreatedSuccess')} Redirecting...
                                 </p>
                             </div>
@@ -164,8 +171,10 @@ export default function SignUpPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="space-y-2">
                                         <Label htmlFor="firstName">{t('firstName')}</Label>
-                                        <Input
+                                        <InputWithIcon
                                             id="firstName"
+                                            icon="lucide:user"
+                                            iconPosition="left"
                                             placeholder={t('firstNamePlaceholder')}
                                             value={formData.firstName}
                                             onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
@@ -174,8 +183,10 @@ export default function SignUpPage() {
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="lastName">{t('lastName')}</Label>
-                                        <Input
+                                        <InputWithIcon
                                             id="lastName"
+                                            icon="lucide:user"
+                                            iconPosition="left"
                                             placeholder={t('lastNamePlaceholder')}
                                             value={formData.lastName}
                                             onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
@@ -187,9 +198,11 @@ export default function SignUpPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="space-y-2">
                                         <Label htmlFor="email">{t('email')}</Label>
-                                        <Input
+                                        <InputWithIcon
                                             id="email"
                                             type="email"
+                                            icon="lucide:mail"
+                                            iconPosition="left"
                                             placeholder={t('emailPlaceholder')}
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -200,10 +213,10 @@ export default function SignUpPage() {
                                     <div className="space-y-2">
                                         <Label htmlFor="phone">{t('phone')} *</Label>
                                         <div className="flex gap-2">
-                                            <div className="flex items-center gap-2 px-3 border border-zinc-200 dark:border-zinc-700 rounded-md bg-zinc-50 dark:bg-zinc-800">
-                                                <span className="text-2xl">🇫🇷</span>
-                                                <span className="text-sm">+33</span>
-                                            </div>
+                                            <PhoneCodeSelect 
+                                                value={formData.phoneCountry}
+                                                onChange={(code) => setFormData({ ...formData, phoneCountry: code })}
+                                            />
                                             <Input
                                                 id="phone"
                                                 placeholder={t('phonePlaceholder')}
@@ -246,42 +259,27 @@ export default function SignUpPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     <div className="space-y-2">
                                         <Label htmlFor="country">{t('country')}</Label>
-                                        <select
-                                            id="country"
-                                            className="w-full px-3 py-2 border border-zinc-200 dark:border-zinc-700 rounded-md bg-white dark:bg-zinc-800"
+                                        <CountrySelect
                                             value={formData.country}
-                                            onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                                        >
-                                            <option value="">{t('countryPlaceholder')}</option>
-                                            <option value="fr">France</option>
-                                            <option value="us">United States</option>
-                                        </select>
+                                            onChange={(code) => setFormData({ ...formData, country: code })}
+                                            placeholder={t('countryPlaceholder')}
+                                        />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="language">{t('language')}</Label>
-                                        <select
-                                            id="language"
-                                            className="w-full px-3 py-2 border border-zinc-200 dark:border-zinc-700 rounded-md bg-white dark:bg-zinc-800"
+                                        <LanguageSelect
                                             value={formData.language}
-                                            onChange={(e) => setFormData({ ...formData, language: e.target.value })}
-                                        >
-                                            <option value="">{t('languagePlaceholder')}</option>
-                                            <option value="fr">Français</option>
-                                            <option value="en">English</option>
-                                        </select>
+                                            onChange={(code) => setFormData({ ...formData, language: code })}
+                                            placeholder={t('languagePlaceholder')}
+                                        />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="currency">{t('currency')}</Label>
-                                        <select
-                                            id="currency"
-                                            className="w-full px-3 py-2 border border-zinc-200 dark:border-zinc-700 rounded-md bg-white dark:bg-zinc-800"
+                                        <CurrencySelect
                                             value={formData.currency}
-                                            onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
-                                        >
-                                            <option value="">{t('currencyPlaceholder')}</option>
-                                            <option value="eur">EUR (€)</option>
-                                            <option value="usd">USD ($)</option>
-                                        </select>
+                                            onChange={(code) => setFormData({ ...formData, currency: code })}
+                                            placeholder={t('currencyPlaceholder')}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -353,49 +351,31 @@ export default function SignUpPage() {
 
                                 <div className="space-y-2">
                                     <Label htmlFor="password">{t('password')}</Label>
-                                    <Input
+                                    <PasswordInput
                                         id="password"
-                                        type="password"
                                         placeholder={t('passwordPlaceholder')}
                                         value={formData.password}
                                         onChange={(e) => handlePasswordChange(e.target.value)}
                                         required
                                     />
 
-                                    {/* {formData.password && ( */}
-                                        <div className="space-y-2 p-3 bg-zinc-50 dark:bg-zinc-800 rounded-md">
-                                            <p className="text-xs font-medium text-zinc-700 dark:text-zinc-300">
-                                                {t('passwordRequirements')}
-                                            </p>
-                                            <div className="space-y-1">
-                                                {[
-                                                    { key: 'minLength', text: t('passwordMinLength') },
-                                                    { key: 'hasNumber', text: t('passwordNumber') },
-                                                    { key: 'hasLowercase', text: t('passwordLowercase') },
-                                                    { key: 'hasUppercase', text: t('passwordUppercase') },
-                                                    { key: 'hasSpecial', text: t('passwordSpecial') }
-                                                ].map(({ key, text }) => (
-                                                    <div key={key} className="flex items-center gap-2 text-xs">
-                                                        {passwordValidation[key as keyof typeof passwordValidation] ? (
-                                                            <Check className="w-4 h-4 text-green-500" />
-                                                        ) : (
-                                                            <X className="w-4 h-4 text-red-500" />
-                                                        )}
-                                                        <span className={passwordValidation[key as keyof typeof passwordValidation] ? 'text-green-600 dark:text-green-400' : 'text-zinc-600 dark:text-zinc-400'}>
-                                                            {text}
-                                                        </span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    {/* )} */}
+                                    <PasswordStrengthIndicator
+                                        validation={passwordValidation}
+                                        title={t('passwordRequirements')}
+                                        requirements={{
+                                            minLength: t('passwordMinLength'),
+                                            hasNumber: t('passwordNumber'),
+                                            hasLowercase: t('passwordLowercase'),
+                                            hasUppercase: t('passwordUppercase'),
+                                            hasSpecial: t('passwordSpecial')
+                                        }}
+                                    />
                                 </div>
 
                                 <div className="space-y-2">
                                     <Label htmlFor="confirmPassword">{t('confirmPassword')}</Label>
-                                    <Input
+                                    <PasswordInput
                                         id="confirmPassword"
-                                        type="password"
                                         placeholder={t('confirmPasswordPlaceholder')}
                                         value={formData.confirmPassword}
                                         onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
@@ -490,6 +470,7 @@ export default function SignUpPage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
