@@ -8,23 +8,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.pexels.com',
+        hostname: '**',
       },
       {
-        protocol: 'https',
-        hostname: 'medias.logishotels.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cf.bstatic.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media-cdn.tripadvisor.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: 'http',
+        hostname: '**',
       },
     ],
   }

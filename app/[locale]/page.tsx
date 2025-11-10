@@ -3,6 +3,7 @@ import NavBar from "@/components/Blocks/NavBar";
 import Header from "@/components/Blocks/Header";
 import PropertyTypes from "@/components/Blocks/PropertyTypes";
 import WaterfrontWinners from "@/components/Blocks/WaterfrontWinners";
+import DiscoverDestinations from "@/components/Blocks/DiscoverDestinations";
 import Footer from "@/components/Blocks/Footer";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <PropertyTypes/>
       <WaterfrontWinners />
+      <DiscoverDestinations />
       <Footer />
     </div>
   );

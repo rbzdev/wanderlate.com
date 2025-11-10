@@ -7,8 +7,8 @@ export default function Footer() {
   const t = useTranslations('Footer');
 
   return (
-    <footer className="bg-white dark:bg-zinc-900 ">
-      <div className="max-w-7xl mx-auto py-12">
+    <footer className="bg-zinc-50 border-t dark:bg-zinc-900 ">
+      <div className="max-w-7xl mx-auto py-8">
         {/* Logo */}
         <div className="mb-8">
           <Link href="/" className="inline-block">

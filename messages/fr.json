@@ -58,6 +58,17 @@
         "description": "Détendez-vous, relaxez-vous et amusez-vous au bord de l'eau avec votre équipage.",
         "cta": "Réserver un séjour au bord de l'eau"
     },
+    "DiscoverDestinations": {
+        "title": "Découvrez nos destinations",
+        "tabs": {
+            "beach": "Plage",
+            "culture": "Culture",
+            "ski": "Ski",
+            "family": "Famille",
+            "wellness": "Bien-être & relaxation"
+        },
+        "priceLabel": "prix moyen par nuit"
+    },
     "Header": {
         "memberBenefits": {
             "title": "Économisez 10% minimum sur plus de 100 000 hôtels dans le monde grâce aux Prix membres.",

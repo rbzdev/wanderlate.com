@@ -58,6 +58,17 @@
         "description": "Relax, unwind and have fun by the water with your crew.",
         "cta": "Book a waterfront stay"
     },
+    "DiscoverDestinations": {
+        "title": "Discover our destinations",
+        "tabs": {
+            "beach": "Beach",
+            "culture": "Culture",
+            "ski": "Ski",
+            "family": "Family",
+            "wellness": "Wellness & relaxation"
+        },
+        "priceLabel": "average price per night"
+    },
     "Header": {
         "memberBenefits": {
             "title": "Save at least 10% on over 100,000 hotels worldwide with Member Prices.",
