@@ -17,7 +17,7 @@ export default function Home() {
       <PropertyTypes/>
       <WaterfrontWinners />
       <DiscoverDestinations />
-      <BestOffers />
+      <BestOffers /> 
       <TravelersFavorites />
       <WhereToGo />
       <Footer />
