@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import { Montserrat } from 'next/font/google';
 
 // Internationalisation helper
 import { getMessages } from 'next-intl/server';
 
 // Internationalisation
 import { NextIntlClientProvider } from 'next-intl';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
 
 export const metadata: Metadata = {
   title: "Wanderlate - Réservations d'hôtels",
@@ -27,7 +34,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`overflow-x-hidden max-w-7xl mx-auto antialiased `}
+        className={`overflow-x-hidden max-w-7xl mx-auto antialiased ${montserrat.className} font-sans`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

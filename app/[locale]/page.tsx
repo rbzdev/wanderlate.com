@@ -4,6 +4,9 @@ import Header from "@/components/Blocks/Header";
 import PropertyTypes from "@/components/Blocks/PropertyTypes";
 import WaterfrontWinners from "@/components/Blocks/WaterfrontWinners";
 import DiscoverDestinations from "@/components/Blocks/DiscoverDestinations";
+import BestOffers from "@/components/Blocks/BestOffers"; 
+import TravelersFavorites from "@/components/Blocks/TravelersFavorites";
+import WhereToGo from "@/components/Blocks/WhereToGo";
 import Footer from "@/components/Blocks/Footer";
 
 export default function Home() {
@@ -14,6 +17,9 @@ export default function Home() {
       <PropertyTypes/>
       <WaterfrontWinners />
       <DiscoverDestinations />
+      <BestOffers />
+      <TravelersFavorites />
+      <WhereToGo />
       <Footer />
     </div>
   );

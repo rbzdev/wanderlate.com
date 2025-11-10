@@ -69,6 +69,119 @@
         },
         "priceLabel": "prix moyen par nuit"
     },
+    "BestOffers": {
+        "title": "Nos meilleures offres basées sur votre recherche récente",
+        "dateRange": "20 nov - 25 nov",
+        "vipAccess": "Accès VIP",
+        "perNight": "par nuit",
+        "memberPrice": "Prix membre disponible",
+        "taxesIncluded": "taxes et frais inclus",
+        "offers": {
+            "saintTropez": {
+                "location": "Saint-Tropez",
+                "country": "France",
+                "title": "Villa de Luxe avec Vue Mer - 5 Chambres 5 Salles de...",
+                "reviewLabel": "Exceptionnel"
+            },
+            "bali": {
+                "location": "Bali",
+                "country": "Indonésie",
+                "title": "Resort Tropical Bali - Piscine et Spa",
+                "reviewLabel": "Merveilleux"
+            },
+            "zermatt": {
+                "location": "Zermatt",
+                "country": "Suisse",
+                "title": "Chalet Alpin Suisse - Vue Montagne",
+                "reviewLabel": "Fabuleux"
+            },
+            "paris": {
+                "location": "Paris",
+                "country": "France",
+                "title": "Appartement Urbain Moderne - Centre Ville",
+                "reviewLabel": "Très bien"
+            },
+            "venice": {
+                "location": "Venise",
+                "country": "Italie",
+                "title": "Palazzo Historique avec vue sur le Canal",
+                "reviewLabel": "Très bien"
+            },
+            "barcelona": {
+                "location": "Barcelone",
+                "country": "Espagne",
+                "title": "Loft Design au Cœur de Barcelone",
+                "reviewLabel": "Très bien"
+            },
+            "amsterdam": {
+                "location": "Amsterdam",
+                "country": "Pays-Bas",
+                "title": "Houseboat moderne sur les Canaux",
+                "reviewLabel": "Très bien"
+            }
+        },
+        "reviews": "avis"
+    },
+    "TravelersFavorites": {
+        "title": "Favoris des voyageurs",
+        "dateRange": "Explorer pour 30 nov - 2 déc",
+        "exceptional": "Exceptionnel",
+        "reviews": "avis",
+        "forNights": "pour {nights} nuits",
+        "feesIncluded": "Frais inclus",
+        "properties": {
+            "maldivesBungalow": {
+                "title": "Resort de Vacances avec Bungalow sur Pilotis",
+                "location": "Maldives"
+            },
+            "marrakechRiad": {
+                "title": "Riad Authentique au Cœur de la Médina",
+                "location": "Marrakech, Maroc"
+            },
+            "brazilHistoric": {
+                "title": "Pousada Historique avec Vue sur l'Océan",
+                "location": "Paraty, Brésil"
+            },
+            "seychellesVilla": {
+                "title": "Villa de Luxe Pieds dans l'Eau",
+                "location": "Seychelles"
+            },
+            "santoriniSuite": {
+                "title": "Suite avec Vue sur la Caldeira",
+                "location": "Santorin, Grèce"
+            }
+        }
+    },
+    "WhereToGo": {
+        "title": "Où partir ? Découvrez nos destinations les plus populaires",
+        "dateRange": "Explorer pour 15 déc - 17 déc",
+        "exceptional": "Exceptionnel",
+        "reviews": "avis",
+        "forNights": "pour {nights} nuits",
+        "feesIncluded": "Frais inclus",
+        "destinations": {
+            "reykjavik": {
+                "title": "Maison avec Vue sur la Mer",
+                "location": "Reykjavik, Islande"
+            },
+            "niceMediterranean": {
+                "title": "Villa Méditerranéenne avec Piscine Privée - 3 Chambres",
+                "location": "Nice, Côte d'Azur"
+            },
+            "parisEiffel": {
+                "title": "Appartement de Luxe avec Vue Tour Eiffel",
+                "location": "Paris, Île-de-France"
+            },
+            "innsbruckChalet": {
+                "title": "Chalet Alpin Autrichien avec Vue Panoramique",
+                "location": "Innsbruck, Autriche"
+            },
+            "romeHistoric": {
+                "title": "Appartement Historique au Cœur de Rome",
+                "location": "Rome, Italie"
+            }
+        }
+    },
     "Header": {
         "memberBenefits": {
             "title": "Économisez 10% minimum sur plus de 100 000 hôtels dans le monde grâce aux Prix membres.",
@@ -233,8 +346,8 @@
             "vacationGuides": "Guides de location de vacances",
             "travelCards": "Cartes de crédit voyage"
         },
-        "copyright": "© {year} Wanderlate SAS – Tous droits réservés.",
-        "trademark": "Wanderlate et son logo sont des marques déposées.",
+        "copyright": " Wanderlate.com fait partie de Wanderlate SAS, le leader mondial des voyages en ligne et services associés",
+        "trademark": "© 2025 Wanderlate.com™. Tous droits réservés",
         "disclaimer": "Wanderlate SAS n'est pas responsable du contenu des sites externes."
     }
 }

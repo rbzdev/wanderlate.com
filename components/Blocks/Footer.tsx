@@ -182,7 +182,7 @@ export default function Footer() {
           <div className="text-center space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
             <p>{t('copyright', { year: new Date().getFullYear() })}</p>
             <p>{t('trademark')}</p>
-            <p>{t('disclaimer')}</p>
+            {/* <p>{t('disclaimer')}</p> */}
           </div>
         </div>
       </div>
