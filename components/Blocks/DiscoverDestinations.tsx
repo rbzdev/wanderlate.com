@@ -222,7 +222,7 @@ export default function DiscoverDestinations() {
     ];
 
     return (
-        <section className="py-16 px-6  dark:bg-black">
+        <section className="py-16 px-0 sm:px-6  dark:bg-black">
             <div className="max-w-7xl mx-auto">
                 {/* Title */}
                 <h2 className="text-3xl font-bold text-black dark:text-white mb-8">
@@ -246,7 +246,7 @@ export default function DiscoverDestinations() {
                                 key={tab.id}
                                 data-id={tab.id}
                                 type="button"
-                                className=" w-full flex items-center justify-center"
+                                className="text-xs sm:text-base w-full flex items-center justify-center line-clamp-1"
                             >
                                 {tab.label}
                             </ButtonTab>
@@ -264,7 +264,7 @@ export default function DiscoverDestinations() {
                 >
                     <CarouselContent className="-ml-4 py-4">
                         {destinations[activeTab].map((destination) => (
-                            <CarouselItem key={destination.id} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                            <CarouselItem key={destination.id} className="pl-4 basis-1/2 lg:basis-1/3 xl:basis-1/4">
                                 <div className="group cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden">
                                     {/* Image */}
                                     <div className="relative h-36 overflow-hidden">
