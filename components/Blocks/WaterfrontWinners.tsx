@@ -32,7 +32,7 @@ export default function WaterfrontWinners() {
                     </p>
                     <Button 
                         size="lg"
-                        className="bg-secondary hover:bg-secondary/90 font-normal"
+                        className="bg-primary hover:bg-primary/90 font-normal"
                     >
                         {t('cta')}
                     </Button>

@@ -47,10 +47,19 @@
         "title": "Types de propriétés",
         "properties": {
             "appartement": "Appartement",
-            "ferme": "Ferme",
-            "bateau": "Bateau maison",
-            "appart-hotel": "Appart'Hotel",
-            "spa": "Spa"
+            "maison": "Maison",
+            "hotel": "Hôtel",
+            "chalet": "Chalet",
+            "maison-hotes": "Maison d'hôtes",
+            "unique": "Unique"
+        },
+        "descriptions": {
+            "appartementDesc": "Lofts & studios au cœur des villes",
+            "maisonDesc": "Maisons familiales & villas privées",
+            "hotelDesc": "Hôtels design & établissements 5★",
+            "chaletDesc": "Retraites en montagne et au ski",
+            "maisonHotesDesc": "Chambres d'hôtes & séjours authentiques",
+            "uniqueDesc": "Cabane, bateau, bulle, expériences rares"
         }
     },
     "WaterfrontWinners": {
@@ -180,6 +189,34 @@
                 "title": "Appartement Historique au Cœur de Rome",
                 "location": "Rome, Italie"
             }
+        }
+    },
+    "Trips": {
+        "title": "Trouvez votre séjour parfait",
+        "loading": "Recherche d'hôtels en cours...",
+        "filters": {
+            "title": "Filtres",
+            "priceRange": "Prix par nuit",
+            "starRating": "Classement par étoiles",
+            "amenities": "Équipements",
+            "boardType": "Type de pension",
+            "apply": "Appliquer les filtres",
+            "reset": "Réinitialiser"
+        },
+        "results": {
+            "found": "{count} hôtels trouvés",
+            "sortBy": "Trier par"
+        },
+        "noResults": {
+            "title": "Aucun hôtel trouvé",
+            "description": "Essayez d'ajuster vos filtres ou critères de recherche",
+            "tryAgain": "Réinitialiser les filtres"
+        },
+        "hotelCard": {
+            "from": "À partir de",
+            "perNight": "par nuit",
+            "viewDetails": "Voir les détails",
+            "reviews": "{count} avis"
         }
     },
     "Header": {
@@ -322,32 +359,32 @@
     },
     "Footer": {
         "company": {
-            "title": "Entreprise",
-            "about": "À propos",
+            "title": "À propos",
+            "about": "Notre histoire",
             "careers": "Carrières",
-            "affiliates": "Affiliés",
-            "press": "Salle de presse"
+            "press": "Presse",
+            "investors": "Investisseurs"
         },
-        "legal": {
-            "title": "Juridique et confidentialité",
-            "notices": "Mentions légales",
-            "terms": "Conditions générales",
-            "termsOfSale": "Conditions de vente",
-            "privacy": "Politique de confidentialité",
-            "cookies": "Déclaration sur les cookies",
-            "antiDiscrimination": "Charte anti-discrimination"
+        "support": {
+            "title": "Assistance",
+            "helpCenter": "Centre d'aide",
+            "contact": "Nous contacter",
+            "cancellation": "Politique d'annulation",
+            "terms": "Conditions générales"
         },
-        "explore": {
-            "title": "Explorer Wanderlate.com",
-            "listProperty": "Publier votre annonce",
-            "bookConfidence": "Réserver en toute confiance",
-            "trustSafety": "Confiance et sécurité",
-            "partnerResources": "Ressources partenaires",
-            "vacationGuides": "Guides de location de vacances",
-            "travelCards": "Cartes de crédit voyage"
+        "partners": {
+            "title": "Partenaires",
+            "become": "Devenir partenaire",
+            "affiliate": "Programme d'affiliation",
+            "ownerSpace": "Espace propriétaire",
+            "developerApi": "API développeurs"
         },
-        "copyright": " Wanderlate.com fait partie de Wanderlate SAS, le leader mondial des voyages en ligne et services associés",
-        "trademark": "© 2025 Wanderlate.com™. Tous droits réservés",
-        "disclaimer": "Wanderlate SAS n'est pas responsable du contenu des sites externes."
+        "newsletter": {
+            "title": "Suivez-nous",
+            "description": "Inscrivez-vous à notre newsletter pour recevoir les meilleures offres",
+            "placeholder": "Adresse email"
+        },
+        "description": "Wanderlate.com fait partie de Wanderlate SAS., le leader mondial des voyages en ligne et services associés.",
+        "copyright": "Copyright © {year} Wanderlate.com™. Tous droits réservés."
     }
 }

@@ -45,8 +45,10 @@
 
 :root {
   --radius: 0.625rem;
-  --primary: rgba(36, 70, 134);
-  --secondary: rgba(243, 88, 86);
+  /* --primary: rgba(36, 70, 134); */
+  /* --secondary: rgba(243, 88, 86); */
+  --primary: #0095FE ;
+  --secondary : #030933 ;
   --background: oklch(1 0 0);
   --foreground: rgba(36, 70, 134);
   --card: oklch(1 0 0);

@@ -49,7 +49,7 @@ export function RecentTripsSection({ trips }: RecentTripsSectionProps) {
             {t('empty.description')}
           </p>
           <a
-            href={`/${locale}/trips/new`}
+            href={`/${locale}/trips`}
             className="inline-block bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors"
           >
             {t('empty.cta')}

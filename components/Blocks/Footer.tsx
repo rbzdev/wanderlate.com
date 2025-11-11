@@ -2,35 +2,28 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { Icon } from '@iconify/react';
+import { Input } from '../ui/input';
+import { Button } from '../ui/button';
 
 export default function Footer() {
   const t = useTranslations('Footer');
 
   return (
-    <footer className="bg-zinc-50 border-t dark:bg-zinc-900 ">
-      <div className="max-w-7xl mx-auto py-8">
-        {/* Logo */}
-        <div className="mb-8">
-          <Link href="/" className="inline-block">
-            <h2 className="text-3xl font-bold">
-              <span className="text-primary">wanderlate</span>
-              <span className="text-secondary">.com</span>
-            </h2>
-          </Link>
-        </div>
-
+    <footer className="bg-primary dark:bg-primary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Footer Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Section */}
           <div>
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">
+            <h3 className="text-lg font-semibold text-white mb-6">
               {t('company.title')}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link 
                   href="/#" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
                   {t('company.about')}
                 </Link>
@@ -38,7 +31,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/#" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
                   {t('company.careers')}
                 </Link>
@@ -46,143 +39,170 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/#" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('company.affiliates')}
+                  {t('company.press')}
                 </Link>
               </li>
               <li>
                 <Link 
                   href="/#" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('company.press')}
+                  {t('company.investors')}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Legal Section */}
+          {/* Support Section */}
           <div>
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">
-              {t('legal.title')}
+            <h3 className="text-lg font-semibold text-white mb-6">
+              {t('support.title')}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link 
-                  href="/legal-notices" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  href="/help" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('legal.notices')}
+                  {t('support.helpCenter')}
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/contact" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
+                >
+                  {t('support.contact')}
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/cancellation" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
+                >
+                  {t('support.cancellation')}
                 </Link>
               </li>
               <li>
                 <Link 
                   href="/terms" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('legal.terms')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/terms-of-sale" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('legal.termsOfSale')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/privacy" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('legal.privacy')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/cookies" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('legal.cookies')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/anti-discrimination" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('legal.antiDiscrimination')}
+                  {t('support.terms')}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Explore Section */}
+          {/* Partners Section */}
           <div>
-            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-4">
-              {t('explore.title')}
+            <h3 className="text-lg font-semibold text-white mb-6">
+              {t('partners.title')}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link 
-                  href="/list-property" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  href="/become-partner" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('explore.listProperty')}
+                  {t('partners.become')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/confidence" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  href="/affiliate" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('explore.bookConfidence')}
+                  {t('partners.affiliate')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/safety" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  href="/owner-space" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('explore.trustSafety')}
+                  {t('partners.ownerSpace')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/partner-resources" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
+                  href="/developer-api" 
+                  className="text-white/80 hover:text-white transition-colors text-sm"
                 >
-                  {t('explore.partnerResources')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/guides" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('explore.vacationGuides')}
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/travel-cards" 
-                  className="text-zinc-600 dark:text-zinc-400 hover:text-secondary dark:hover:text-secondary transition-colors"
-                >
-                  {t('explore.travelCards')}
+                  {t('partners.developerApi')}
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Newsletter Section */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-6">
+              {t('newsletter.title')}
+            </h3>
+            <div className="space-y-4">
+              {/* Social Icons */}
+              <div className="flex gap-3">
+                <Link 
+                  href="https://facebook.com" 
+                  target="_blank"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Icon icon="lucide:facebook" className="w-5 h-5 text-white" />
+                </Link>
+                <Link 
+                  href="https://twitter.com" 
+                  target="_blank"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Icon icon="lucide:twitter" className="w-5 h-5 text-white" />
+                </Link>
+                <Link 
+                  href="https://instagram.com" 
+                  target="_blank"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Icon icon="lucide:instagram" className="w-5 h-5 text-white" />
+                </Link>
+                <Link 
+                  href="https://linkedin.com" 
+                  target="_blank"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Icon icon="lucide:linkedin" className="w-5 h-5 text-white" />
+                </Link>
+              </div>
+
+              {/* Newsletter Description */}
+              <p className="text-white/80 text-sm">
+                {t('newsletter.description')}
+              </p>
+
+              {/* Newsletter Form */}
+              <div className="flex gap-2">
+                <Input 
+                  type="email"
+                  placeholder={t('newsletter.placeholder')}
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white! focus:ring-white!"
+                />
+                <Button 
+                  size="icon"
+                  className="bg-secondary hover:bg-secondary/90 text-white shrink-0"
+                >
+                  <Icon icon="lucide:send" className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-zinc-200 dark:border-zinc-800 pt-8">
-          <div className="text-center space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
+        <div className="border-t border-white/20 pt-8">
+          <div className="text-center text-sm text-white/80 space-y-1">
+            <p>{t('description')}</p>
             <p>{t('copyright', { year: new Date().getFullYear() })}</p>
-            <p>{t('trademark')}</p>
-            {/* <p>{t('disclaimer')}</p> */}
           </div>
         </div>
       </div>

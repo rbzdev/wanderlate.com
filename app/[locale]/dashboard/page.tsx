@@ -101,7 +101,7 @@ export default async function DashboardPage({
     {
       actionKey: 'newTrip' as const,
       icon: 'lucide:plus-circle',
-      href: `/${locale}/trips/new`,
+      href: `/${locale}/trips`,
       color: 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400',
     },
     {

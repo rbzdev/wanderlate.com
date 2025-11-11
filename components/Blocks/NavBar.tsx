@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Download } from "lucide-react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
@@ -19,12 +20,12 @@ import {
 } from "@/components/ui/dialog";
 
 export default function NavBar() {
-    
+
     const t = useTranslations("NavBar");
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
-    
+
     const [isDialogOpen, setIsDialogOpen] = useState(false);
 
     const handleLocaleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -40,14 +41,20 @@ export default function NavBar() {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href={`/${locale}`} className="text-xl sm:text-2xl font-bold text-black dark:text-white hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-                        <span className="text-primary">wanderlate</span><span className="text-secondary">.com</span>
+                        <Image
+                            src="/assets/logos/logo.png"
+                            alt="Wanderlate Logo"
+                            width={50}
+                            height={50}
+                            className="h-8 sm:h-10 w-8 sm:w-10 object-contain"
+                        />
                     </Link>
 
                     {/* Navigation Links */}
                     <div className="flex items-center gap-4 md:gap-8">
 
                         {/* Download App - Always visible */}
-                        <button 
+                        <button
                             onClick={() => setIsDialogOpen(true)}
                             className="flex items-center gap-1 border p-2 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
                         >
@@ -58,7 +65,7 @@ export default function NavBar() {
                         {/* Desktop Navigation - Hidden on mobile */}
                         <div className="hidden md:flex items-center gap-8">
                             {/* language selection */}
-                            <select 
+                            <select
                                 value={locale}
                                 onChange={handleLocaleChange}
                                 className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors cursor-pointer bg-transparent"
