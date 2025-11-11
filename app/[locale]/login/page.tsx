@@ -71,7 +71,7 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+        <div className="min-h-screen">
             <NavBar />
             
             <div className="flex items-center justify-center px-4 pt-32 pb-16">
@@ -171,7 +171,7 @@ export default function LoginPage() {
                                 <div className="w-full border-t border-zinc-200 dark:border-zinc-700"></div>
                             </div>
                             <div className="relative flex justify-center text-sm">
-                                <span className="px-4 bg-gray-50 dark:bg-zinc-900 text-zinc-500">
+                                <span className="px-4 dark:bg-zinc-900 text-zinc-500">
                                     {t('orContinueWith')}
                                 </span>
                             </div>

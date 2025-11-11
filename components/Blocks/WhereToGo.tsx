@@ -106,7 +106,7 @@ export default function WhereToGo() {
     const t = useTranslations('WhereToGo');
     
     return (
-        <section className="py-12 bg-zinc-50 dark:bg-zinc-900">
+        <section className="py-12 dark:bg-zinc-900">
             <div className="max-w-7xl mx-auto">
                 {/* Title */}
                 <div className="mb-8">

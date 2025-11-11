@@ -85,7 +85,7 @@ export default function TripsPage() {
     };
 
     return (
-        <div className="min-h-screen px-4 sm:px-8 bg-zinc-50 dark:bg-black overflow-x-hidden">
+        <div className="min-h-screen px-4 sm:px-8 overflow-x-hidden">
             <NavBar />
 
             <div className="max-w-7xl mx-auto py-8">

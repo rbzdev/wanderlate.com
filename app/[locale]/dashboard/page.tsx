@@ -114,7 +114,7 @@ export default async function DashboardPage({
       actionKey: 'searchFlights' as const,
       icon: 'lucide:plane',
       href: '#',
-      color: 'bg-zinc-50 dark:bg-zinc-900/20 text-zinc-400 dark:text-zinc-600',
+      color: ' text-zinc-400 dark:text-zinc-600',
       disabled: true,
     },
     {
@@ -126,7 +126,7 @@ export default async function DashboardPage({
   ];
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+    <div className="min-h-screen">
 
       <div className="max-w-7xl mx-auto px-4 pt-4 pb-16">
         {/* Welcome Banner */}

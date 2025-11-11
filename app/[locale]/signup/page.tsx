@@ -122,7 +122,7 @@ export default function SignUpPage() {
     };
 
     return (
-        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
+        <div className="min-h-screen">
             <NavBar />
 
             <div className="flex items-center justify-center px-4 pt-32 pb-16">

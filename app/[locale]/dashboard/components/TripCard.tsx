@@ -30,7 +30,7 @@ const statusConfig = {
   },
   completed: {
     labelKey: 'completed',
-    color: 'bg-zinc-50 dark:bg-zinc-900/20 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800',
+    color: 'dark:bg-zinc-900/20 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800',
     icon: 'lucide:check-check',
   },
   cancelled: {
