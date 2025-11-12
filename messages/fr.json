@@ -221,8 +221,8 @@
     },
     "Header": {
         "memberBenefits": {
-            "title": "Économisez 10% minimum sur plus de 100 000 hôtels dans le monde grâce aux Prix membres.",
-            "subtitle": "Créez un compte gratuit pour accéder à ces prix exclusifs et bien plus encore.",
+            "title": "Économisez au moins 10% minimum sur plus de 100 000 hôtels dans le monde grâce aux Prix membres.",
+            "subtitle": "Créez gratuitement votre compte pour accéder à ces tarifs exclusifs et à de nombreux avantages supplémentaires.",
             "signIn": "Se connecter"
         },
         "advantages": {

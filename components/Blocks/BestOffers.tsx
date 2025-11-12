@@ -157,7 +157,7 @@ export default function BestOffers() {
             <div className="max-w-7xl mx-auto">
                 {/* Title */}
                 <div className="mb-8 px-4 sm:px-0 shadow-lg rounded-lg ">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                    <h2 className="text-lg sm:text-3xl md:text-4xl font-bold text-white mb-2">
                         {t('title')}
                     </h2> 
                     <p className="text-white/80 text-lg">
@@ -176,7 +176,7 @@ export default function BestOffers() {
                     >
                         <CarouselContent className="-ml-4">
                             {offers.map((offer) => (
-                                <CarouselItem key={offer.id} className="pl-4 basis-2/3 lg:basis-1/3 xl:basis-1/4">
+                                <CarouselItem key={offer.id} className="pl-4 basis-2/3 lg:basis-1/3 xl:basis-1/4 flex">
                                     <OfferCard offer={offer} />
                                 </CarouselItem>
                             ))}
@@ -205,9 +205,9 @@ function OfferCard({ offer }: { offer: Offer }) {
     };
 
     return (
-        <div className="group cursor-pointer bg-white/50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+        <div className="group cursor-pointer bg-white/50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col w-full">
             {/* Image Carousel */}
-            <div className="relative h-64 overflow-hidden">
+            <div className="relative h-64 overflow-hidden shrink-0">
                 <Image
                     src={offer.images[currentImageIndex]}
                     alt={t(`offers.${offer.translationKey}.title`)}
@@ -246,9 +246,9 @@ function OfferCard({ offer }: { offer: Offer }) {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-3">
+            <div className="p-4 space-y-3 flex-1 flex flex-col">
                 {/* Location */}
-                <div>
+                <div className="shrink-0">
                     <p className="text-sm text-zinc-600">{t(`offers.${offer.translationKey}.location`)}, {t(`offers.${offer.translationKey}.country`)}</p>
                     <h3 className="text-lg font-semibold text-black line-clamp-2">
                         {t(`offers.${offer.translationKey}.title`)}
@@ -256,7 +256,7 @@ function OfferCard({ offer }: { offer: Offer }) {
                 </div>
 
                 {/* Rating */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 shrink-0">
                     <div className="bg-green-400 text-white px-2 py-1 rounded-md text-sm">
                         {offer.rating}
                     </div>
@@ -266,8 +266,11 @@ function OfferCard({ offer }: { offer: Offer }) {
                     </div>
                 </div>
 
+                {/* Spacer to push price and badges to bottom */}
+                <div className="flex-1"></div>
+
                 {/* Price */}
-                <div className="space-y-2">
+                <div className="space-y-2 shrink-0">
                     <div className="flex items-baseline gap-2">
                         <span className="text-2xl font-bold text-black">{offer.price} €</span>
                         <span className="text-sm text-zinc-500 line-through">{offer.originalPrice} €</span>
@@ -277,7 +280,7 @@ function OfferCard({ offer }: { offer: Offer }) {
 
                 {/* Member Price Badge */}
                 {offer.memberPriceAvailable && (
-                    <div className="flex items-center text-xs w-fit bg-primary text-white py- px-2 rounded-sm font-light">
+                    <div className="flex items-center text-xs w-fit bg-primary text-white py- px-2 rounded-sm font-light shrink-0">
                         <Icon icon="mdi:star-four-points-small" className="text-3xl" />
                         {t('memberPrice')}
                     </div>
@@ -285,7 +288,7 @@ function OfferCard({ offer }: { offer: Offer }) {
 
                 {/* Taxes Included */}
                 {offer.taxesIncluded && (
-                    <p className="text-xs text-zinc-500">{t('taxesIncluded')}</p>
+                    <p className="text-xs text-zinc-500 shrink-0">{t('taxesIncluded')}</p>
                 )}
             </div>
         </div>

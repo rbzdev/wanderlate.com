@@ -129,13 +129,13 @@ export default function WhereToGo() {
                     >
                         <CarouselContent className="-ml-4">
                             {destinations.map((destination) => (
-                                <CarouselItem key={destination.id} className="pl-4 basis-2/3 lg:basis-1/3 xl:basis-1/4">
+                                <CarouselItem key={destination.id} className="pl-4 basis-2/3 lg:basis-1/3 xl:basis-1/4 flex pb-8">
                                     <DestinationCard destination={destination} />
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex -left-12 bg-white hover:bg-zinc-100" />
-                        <CarouselNext className="hidden md:flex -right-12 bg-white hover:bg-zinc-100" />
+                        <CarouselPrevious className="hidden md:flex -left-4 bg-white hover:bg-zinc-100" />
+                        <CarouselNext className="hidden md:flex -right-4 bg-white hover:bg-zinc-100" />
                     </Carousel>
                 </div>
             </div>
@@ -158,9 +158,9 @@ function DestinationCard({ destination }: { destination: Destination }) {
     };
 
     return (
-        <div className="group cursor-pointer bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow my-4">
+        <div className="group cursor-pointer bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow my-4 h-full flex flex-col w-full">
             {/* Image Carousel */}
-            <div className="relative h-64 overflow-hidden">
+            <div className="relative h-64 overflow-hidden shrink-0">
                 <Image
                     src={destination.images[currentImageIndex]}
                     alt={t(`destinations.${destination.translationKey}.title`)}
@@ -193,9 +193,9 @@ function DestinationCard({ destination }: { destination: Destination }) {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-3">
+            <div className="p-4 space-y-3 flex-1 flex flex-col">
                 {/* Rating */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 shrink-0">
                     <div className="bg-green-500/10 text-green-600 px-2 py-1 rounded text-sm">
                         {destination.rating}
                     </div>
@@ -205,7 +205,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
                 </div>
 
                 {/* Title & Location */}
-                <div>
+                <div className="shrink-0">
                     <h3 className="text-lg font-semibold text-zinc-900 dark:text-white line-clamp-2">
                         {t(`destinations.${destination.translationKey}.title`)}
                     </h3>
@@ -214,8 +214,11 @@ function DestinationCard({ destination }: { destination: Destination }) {
                     </p>
                 </div>
 
+                {/* Spacer to push price and fees to bottom */}
+                <div className="flex-1"></div>
+
                 {/* Price */}
-                <div className="space-y-1">
+                <div className="space-y-1 shrink-0">
                     <div className="flex items-baseline gap-2">
                         <span className="text-2xl font-semibold text-zinc-900 dark:text-white">€{destination.price}</span>
                     </div>
@@ -226,7 +229,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
 
                 {/* Fees Included */}
                 {destination.feesIncluded && (
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">{t('feesIncluded')}</p>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 shrink-0">{t('feesIncluded')}</p>
                 )}
             </div>
         </div>

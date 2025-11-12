@@ -134,8 +134,8 @@ export default function TravelersFavorites() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="hidden md:flex -left-12 bg-white hover:bg-zinc-100" />
-                        <CarouselNext className="hidden md:flex -right-12 bg-white hover:bg-zinc-100" />
+                        <CarouselPrevious className="hidden md:flex -left-4 bg-white hover:bg-zinc-100" />
+                        <CarouselNext className="hidden md:flex -right-4 bg-white hover:bg-zinc-100" />
                     </Carousel>
                 </div>
             </div>
