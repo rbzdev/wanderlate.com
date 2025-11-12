@@ -59,7 +59,7 @@ export default function PropertyTypes() {
                 {t('title')}
             </h2>
 
-            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
                 {propertyTypes.map((type, idKey) => (
                     <div key={idKey} className="relative w-full h-42 sm:h-80 rounded-xl overflow-hidden group cursor-pointer">
                         

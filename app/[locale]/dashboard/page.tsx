@@ -5,6 +5,8 @@ import { WelcomeBanner } from './components/WelcomeBanner';
 import { StatsCard } from './components/StatsCard';
 import { QuickActionsSection } from './components/QuickActionsSection';
 import { RecentTripsSection } from './components/RecentTripsSection';
+import { Sidebar } from './components/Sidebar';
+import { MobileSidebar } from './components/MobileSidebar';
 
 /**
  * 
@@ -126,45 +128,55 @@ export default async function DashboardPage({
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="flex min-h-screen bg-zinc-50 dark:bg-black">
+      {/* Desktop Sidebar */}
+      <div className="hidden lg:block">
+        <Sidebar locale={locale} userName={user.firstname} />
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 pt-4 pb-16">
-        {/* Welcome Banner */}
-        <WelcomeBanner userName={user.firstname} />
+      {/* Mobile Sidebar */}
+      <MobileSidebar locale={locale} userName={user.firstname} />
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <StatsCard
-            statKey="totalTrips"
-            value={totalTrips}
-            icon="lucide:map"
-            color="blue"
-          />
-          <StatsCard
-            statKey="upcomingTrips"
-            value={upcomingTrips}
-            icon="lucide:calendar-check"
-            color="green"
-          />
-          <StatsCard
-            statKey="completedTrips"
-            value={completedTrips}
-            icon="lucide:check-circle"
-            color="purple"
-          />
-          <StatsCard
-            statKey="totalSpent"
-            value={formatCurrency(totalSpent)}
-            icon="lucide:wallet"
-            color="orange"
-          />
+      {/* Main Content */}
+      <div className="flex-1 overflow-x-hidden">
+        <div className="max-w-7xl mx-auto px-4 pt-4 pb-16">
+          {/* Welcome Banner */}
+          <WelcomeBanner userName={user.firstname} />
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <StatsCard
+              statKey="totalTrips"
+              value={totalTrips}
+              icon="lucide:map"
+              color="blue"
+            />
+            <StatsCard
+              statKey="upcomingTrips"
+              value={upcomingTrips}
+              icon="lucide:calendar-check"
+              color="green"
+            />
+            <StatsCard
+              statKey="completedTrips"
+              value={completedTrips}
+              icon="lucide:check-circle"
+              color="purple"
+            />
+            <StatsCard
+              statKey="totalSpent"
+              value={formatCurrency(totalSpent)}
+              icon="lucide:wallet"
+              color="orange"
+            />
+          </div>
+
+          {/* Quick Actions */}
+          <QuickActionsSection actions={quickActions} />
+
+          {/* Recent Trips */}
+          <RecentTripsSection trips={mappedTrips} />
         </div>
-
-        {/* Quick Actions */}
-        <QuickActionsSection actions={quickActions} />
-
-        {/* Recent Trips */}
-        <RecentTripsSection trips={mappedTrips} />
       </div>
     </div>
   );

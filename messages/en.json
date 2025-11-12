@@ -304,6 +304,36 @@
             "login": "Log In",
             "signup": "Create Account"
         },
+        "sidebar": {
+            "welcome": "Hello, {name} 👋",
+            "status": {
+                "online": "Online",
+                "offline": "Offline"
+            },
+            "menu": {
+                "overview": "Overview",
+                "bookings": "My Bookings",
+                "favorites": "Favorites",
+                "messages": "Messages",
+                "loyalty": "Loyalty Program",
+                "profile": "My Profile",
+                "settings": "Settings",
+                "logout": "Log out"
+            },
+            "submenu": {
+                "upcoming": "Upcoming",
+                "current": "Current Stay",
+                "past": "Past Bookings",
+                "cancelled": "Cancelled"
+            }
+        },
+        "overview": {
+            "title": "Overview",
+            "nextBooking": "Next Booking",
+            "loyaltyPoints": "Loyalty Points",
+            "unreadMessages": "Unread Messages",
+            "suggestions": "Destinations you might like"
+        },
         "welcome": {
             "greeting": "Welcome back",
             "subtitle": "Ready for your next adventure?",

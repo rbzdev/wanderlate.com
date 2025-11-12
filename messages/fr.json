@@ -304,6 +304,36 @@
             "login": "Se Connecter",
             "signup": "Créer un Compte"
         },
+        "sidebar": {
+            "welcome": "Bonjour, {name} 👋",
+            "status": {
+                "online": "En ligne",
+                "offline": "Hors ligne"
+            },
+            "menu": {
+                "overview": "Accueil",
+                "bookings": "Mes réservations",
+                "favorites": "Favoris",
+                "messages": "Messages",
+                "loyalty": "Programme de fidélité",
+                "profile": "Mon profil",
+                "settings": "Paramètres",
+                "logout": "Déconnexion"
+            },
+            "submenu": {
+                "upcoming": "À venir",
+                "current": "En cours",
+                "past": "Passées",
+                "cancelled": "Annulées"
+            }
+        },
+        "overview": {
+            "title": "Vue d'ensemble",
+            "nextBooking": "Prochaine réservation",
+            "loyaltyPoints": "Points de fidélité",
+            "unreadMessages": "Messages non lus",
+            "suggestions": "Destinations que vous pourriez aimer"
+        },
         "welcome": {
             "greeting": "Bon retour",
             "subtitle": "Prêt pour votre prochaine aventure ?",

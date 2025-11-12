@@ -53,7 +53,7 @@ export default function Header() {
                 </div>
 
                 <Link href={`/${locale}/login`} className="w-full md:w-fit ">
-                    <Button className="bg-white text-secondary hover:bg-secondary/90 w-full md:w-fit">
+                    <Button className="bg-white text-secondary hover:bg-secondary/90 hover:text-white w-full md:w-fit">
                         {t('memberBenefits.signIn')}
                     </Button>
                 </Link>

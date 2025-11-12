@@ -12,8 +12,8 @@ import NavBar from "@/components/Blocks/NavBar";
 import Footer from "@/components/Blocks/Footer";
 
 // Components
-import { InputWithIcon } from "@/components/ui/input-with-icon";
-import { PasswordInput } from "@/components/ui/password-input";
+// import { InputWithIcon } from "@/components/ui/input-with-icon";
+// import { PasswordInput } from "@/components/ui/password-input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";

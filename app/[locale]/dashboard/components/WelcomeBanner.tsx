@@ -78,7 +78,7 @@ export function WelcomeBanner({ userName }: WelcomeBannerProps) {
                     </button>
 
                     <div className="hidden md:block">
-                        <Icon icon="lucide:plane" className="w-24 h-24 text-white/20" />
+                        <Icon icon="bxs:plane-take-off" className="w-24 h-24 text-white/20" />
                     </div>
                 </div>
             </div>
