@@ -73,14 +73,14 @@ export default function NavBar() {
                         {/* Desktop Navigation - Hidden on mobile */}
                         <div className="hidden md:flex items-center gap-8">
                             {/* language selection */}
-                            <select
+                            {/* <select
                                 value={locale}
                                 onChange={handleLocaleChange}
                                 className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors cursor-pointer bg-transparent"
                             >
                                 <option value="fr">🇫🇷 Français</option>
                                 <option value="en">🇬🇧 English</option>
-                            </select>
+                            </select> */}
 
                             <Link href={`/${locale}`} className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
                                 {t('publishListing')}

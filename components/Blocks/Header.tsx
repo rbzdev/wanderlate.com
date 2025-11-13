@@ -30,7 +30,7 @@ export default function Header() {
         }
     ]
     return (
-        <header className="w-full pt-8 pb-16  space-y-8">
+        <header className="w-full pt-8 pb- space-y-8">
 
             {/* Book Component */}
             <Book />

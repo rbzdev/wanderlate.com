@@ -269,22 +269,24 @@ function OfferCard({ offer }: { offer: Offer }) {
                 {/* Spacer to push price and badges to bottom */}
                 <div className="flex-1"></div>
 
-                {/* Price */}
+                {/* Price Section - Fixed height to align across cards */}
                 <div className="space-y-2 shrink-0">
                     <div className="flex items-baseline gap-2">
                         <span className="text-2xl font-bold text-black">{offer.price} €</span>
                         <span className="text-sm text-zinc-500 line-through">{offer.originalPrice} €</span>
                     </div>
                     <p className="text-xs text-zinc-600">{offer.pricePerNight} € {t('perNight')}</p>
-                </div>
-
-                {/* Member Price Badge */}
-                {offer.memberPriceAvailable && (
-                    <div className="flex items-center text-xs w-fit bg-primary text-white py- px-2 rounded-sm font-light shrink-0">
-                        <Icon icon="mdi:star-four-points-small" className="text-3xl" />
-                        {t('memberPrice')}
+                    
+                    {/* Member Price Badge - Fixed height container */}
+                    <div className="h-6 flex items-center">
+                        {offer.memberPriceAvailable && (
+                            <div className="flex items-center text-xs w-fit bg-primary text-white px-2 rounded-sm font-light">
+                                <Icon icon="mdi:star-four-points-small" className="text-3xl" />
+                                {t('memberPrice')}
+                            </div>
+                        )}
                     </div>
-                )}
+                </div>
 
                 {/* Taxes Included */}
                 {offer.taxesIncluded && (

@@ -160,7 +160,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
     return (
         <div className="group cursor-pointer bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow my-4 h-full flex flex-col w-full">
             {/* Image Carousel */}
-            <div className="relative h-64 overflow-hidden shrink-0">
+            <div className="relative h-64 overflow-hidden shrink-0 ">
                 <Image
                     src={destination.images[currentImageIndex]}
                     alt={t(`destinations.${destination.translationKey}.title`)}
@@ -169,7 +169,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
                 />
 
                 {/* Image Navigation */}
-                <div className="absolute inset-0 flex items-center justify-between px-2 transition-opacity">
+                <div className="absolute inset-0 flex items-center justify-between px-2 transition-opacity ">
                     <button
                         onClick={prevImage}
                         className="bg-black/50 p-2 rounded-full shadow-lg"
@@ -193,7 +193,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-3 flex-1 flex flex-col">
+            <div className="p-4 pb-0 space-y- flex-1 flex flex-col ">
                 {/* Rating */}
                 <div className="flex items-center gap-2 shrink-0">
                     <div className="bg-green-500/10 text-green-600 px-2 py-1 rounded text-sm">
@@ -206,7 +206,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
 
                 {/* Title & Location */}
                 <div className="shrink-0">
-                    <h3 className="text-lg font-semibold text-zinc-900 dark:text-white line-clamp-2">
+                    <h3 className=" font-semibold text-zinc-900 dark:text-white line-clamp-1">
                         {t(`destinations.${destination.translationKey}.title`)}
                     </h3>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">
@@ -215,12 +215,12 @@ function DestinationCard({ destination }: { destination: Destination }) {
                 </div>
 
                 {/* Spacer to push price and fees to bottom */}
-                <div className="flex-1"></div>
+                <div className=""></div>
 
                 {/* Price */}
                 <div className="space-y-1 shrink-0">
                     <div className="flex items-baseline gap-2">
-                        <span className="text-2xl font-semibold text-zinc-900 dark:text-white">€{destination.price}</span>
+                        <span className="text-lg font-semibold text-zinc-900 dark:text-white">€{destination.price}</span>
                     </div>
                     <p className="text-xs text-zinc-600 dark:text-zinc-400">
                         €{destination.pricePerNight} {t('forNights', { nights: destination.nights })}
@@ -228,9 +228,9 @@ function DestinationCard({ destination }: { destination: Destination }) {
                 </div>
 
                 {/* Fees Included */}
-                {destination.feesIncluded && (
+                {/* {destination.feesIncluded && (
                     <p className="text-xs text-zinc-500 dark:text-zinc-400 shrink-0">{t('feesIncluded')}</p>
-                )}
+                )} */}
             </div>
         </div>
     );

@@ -27,7 +27,7 @@ const destinations: Record<string, Destination[]> = {
             id: '1',
             name: 'Nice',
             country: 'France',
-            image: 'https://images.unsplash.com/photo-1643914729809-4aa59fdc4c17?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image: 'https://images.unsplash.com/photo-1503696967350-ad1874122058?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             price: 120,
         },
         {
@@ -296,8 +296,8 @@ export default function DiscoverDestinations() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex" />
-                    <CarouselNext className="hidden md:flex" />
+                    <CarouselPrevious className="hidden md:flex ml-6" />
+                    <CarouselNext className="hidden md:flex mr-6" />
                 </Carousel>
             </div>
         </section>
