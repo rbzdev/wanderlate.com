@@ -409,6 +409,13 @@
             "ownerSpace": "Espace propriétaire",
             "developerApi": "API développeurs"
         },
+        "legal": {
+            "title": "Légal",
+            "privacy": "Politique de confidentialité",
+            "cookies": "Politique des cookies",
+            "legalNotice": "Mentions légales",
+            "gdpr": "RGPD & Protection des données"
+        },
         "newsletter": {
             "title": "Suivez-nous",
             "description": "Inscrivez-vous à notre newsletter pour recevoir les meilleures offres",

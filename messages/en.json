@@ -409,6 +409,13 @@
             "ownerSpace": "Owner space",
             "developerApi": "Developer API"
         },
+        "legal": {
+            "title": "Legal",
+            "privacy": "Privacy policy",
+            "cookies": "Cookie policy",
+            "legalNotice": "Legal notice",
+            "gdpr": "GDPR & Data protection"
+        },
         "newsletter": {
             "title": "Follow us",
             "description": "Sign up for our newsletter to receive the best offers",

@@ -11,9 +11,9 @@ export default function Footer() {
 
   return (
     <footer className=" border-t">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-12">
         {/* Footer Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Company Section */}
           <div>
             <h3 className="text-lg font-semibold text-black mb-6">
@@ -132,6 +132,47 @@ export default function Footer() {
                   className="text-black/80 hover:text-black transition-colors text-sm"
                 >
                   {t('partners.developerApi')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal Section */}
+          <div>
+            <h3 className="text-lg font-semibold text-black mb-6">
+              {t('legal.title')}
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link 
+                  href="/privacy-policy" 
+                  className="text-black/80 hover:text-black transition-colors text-sm"
+                >
+                  {t('legal.privacy')}
+                </Link>
+              </li>
+              {/* <li>
+                <Link 
+                  href="/cookies" 
+                  className="text-black/80 hover:text-black transition-colors text-sm"
+                >
+                  {t('legal.cookies')}
+                </Link>
+              </li> */}
+              <li>
+                <Link 
+                  href="/legal-notice" 
+                  className="text-black/80 hover:text-black transition-colors text-sm"
+                >
+                  {t('legal.legalNotice')}
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/gdpr" 
+                  className="text-black/80 hover:text-black transition-colors text-sm"
+                >
+                  {t('legal.gdpr')}
                 </Link>
               </li>
             </ul>
