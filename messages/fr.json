@@ -388,6 +388,9 @@
         "comingSoonBadge": "À venir"
     },
     "Footer": {
+        "brand": {
+            "description": "Wanderlate est l'un de leaders mondiale en matière de reservation de logement et de voyage dans le monde."
+        },
         "company": {
             "title": "À propos",
             "about": "Notre histoire",
@@ -411,10 +414,10 @@
         },
         "legal": {
             "title": "Légal",
-            "privacy": "Politique de confidentialité",
-            "cookies": "Politique des cookies",
             "legalNotice": "Mentions légales",
-            "gdpr": "RGPD & Protection des données"
+            "termsOfUse": "Conditions Générales d'Utilisation (CGU)",
+            "privacyPolicy": "Politique de protection des données personnelles",
+            "termsOfSale": "Conditions Générales de Vente (CGV)"
         },
         "newsletter": {
             "title": "Suivez-nous",
@@ -423,5 +426,273 @@
         },
         "description": "Wanderlate.com fait partie de Wanderlate SAS., le leader mondial des voyages en ligne et services associés.",
         "copyright": "Copyright © {year} Wanderlate.com™. Tous droits réservés."
+    },
+    "LegalNotice": {
+        "title": "Mentions légales – WANDERLATE",
+        "identification": {
+            "title": "Identification",
+            "denomination": "Dénomination sociale",
+            "legalForm": "Forme juridique",
+            "capital": "Capital social",
+            "headquarters": "Siège social",
+            "vat": "Numéro de TVA intracommunautaire"
+        },
+        "activity": {
+            "title": "Activité",
+            "description": "WANDERLATE est une société de prestations de services spécialisée dans l'organisation de voyages, séjours et expériences sur mesure pour particuliers et professionnels.",
+            "registration": "Elle est immatriculée au registre des opérateurs de voyages et de séjours tenu par Atout France sous le numéro EN COURS,",
+            "iata": "et accréditée par l'Association Internationale du Transport Aérien (IATA) – International Air Transport Association– sous le numéro EN COURS."
+        },
+        "hosting": {
+            "title": "Hébergement du site",
+            "provider": "Hébergeur"
+        },
+        "intellectualProperty": {
+            "title": "Propriété intellectuelle",
+            "content": "L'ensemble du contenu du site (textes, images, logos, vidéos, graphismes, structure) est la propriété exclusive de WANDERLATE, sauf mention contraire. Toute reproduction, représentation ou utilisation sans autorisation préalable écrite est strictement interdite."
+        },
+        "dataProtection": {
+            "title": "Protection des données personnelles (RGPD)",
+            "gdpr": "Conformément au Règlement Général sur la Protection des Données (UE) 2016/679, les données collectées via le site sont strictement destinées à la gestion des relations clients et ne sont jamais transmises à des tiers sans consentement.",
+            "rights": "Vous pouvez exercer vos droits d'accès, de rectification et de suppression à l'adresse : privacy@wanderlate.com."
+        },
+        "liability": {
+            "title": "Responsabilité",
+            "content": "WANDERLATE met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur son site. Cependant, la société ne saurait être tenue responsable d'erreurs, d'omissions ou de tout dommage résultant de l'utilisation de ces informations."
+        },
+        "applicableLaw": {
+            "title": "Droit applicable",
+            "law": "Les présentes mentions légales sont soumises au droit français.",
+            "jurisdiction": "Tout litige relatif à leur interprétation ou à leur exécution sera de la compétence exclusive des tribunaux de Paris."
+        }
+    },
+    "TermsOfUse": {
+        "title": "Conditions Générales d'Utilisation (CGU) – WANDERLATE",
+        "purpose": {
+            "title": "Objet",
+            "description": "Les présentes Conditions Générales d'Utilisation (CGU) ont pour objet de définir les modalités et conditions d'accès et d'utilisation de la plateforme WANDERLATE, accessible à l'adresse www.wanderlate.com. Elles encadrent les relations entre WANDERLATE SARL, exploitante du service, et tout utilisateur (ci-après « l'Utilisateur ») accédant au site ou à l'application."
+        },
+        "company": {
+            "title": "Identification de la société"
+        },
+        "service": {
+            "title": "Description du service",
+            "description": "WANDERLATE met à disposition une plateforme technologique permettant aux utilisateurs de :",
+            "features": {
+                "search": "rechercher, comparer et réserver des prestations de voyage, d'hébergement, de transport et d'activités ;",
+                "connect": "entrer en relation avec des prestataires partenaires indépendants (hôtels, compagnies aériennes, agences locales, etc.) ;",
+                "manage": "gérer leurs réservations et paiements via un espace sécurisé."
+            },
+            "intermediary": "WANDERLATE agit en tant qu'intermédiaire et n'est pas partie au contrat de vente conclu entre l'Utilisateur et le Prestataire, sauf mention contraire."
+        },
+        "access": {
+            "title": "Accès et utilisation",
+            "free": "L'accès à la plateforme est gratuit pour les utilisateurs.",
+            "acceptance": "Toute utilisation implique l'acceptation pleine et entière des présentes CGU.",
+            "userCommitments": "L'Utilisateur s'engage à :",
+            "commitments": {
+                "accurate": "fournir des informations exactes et à jour ;",
+                "lawful": "utiliser le service conformément à la loi et aux bonnes pratiques ;",
+                "noDisruption": "ne pas perturber le bon fonctionnement de la plateforme."
+            },
+            "suspension": "WANDERLATE se réserve le droit de suspendre ou résilier tout compte en cas de manquement."
+        },
+        "account": {
+            "title": "Compte utilisateur",
+            "creation": "Pour certaines fonctionnalités (réservation, historique, facturation), l'Utilisateur doit créer un compte personnel.",
+            "responsibility": "Il est seul responsable de la confidentialité de ses identifiants et des actions effectuées via son compte.",
+            "unauthorized": "Toute utilisation non autorisée devra être signalée immédiatement à WANDERLATE."
+        },
+        "responsibilities": {
+            "title": "Responsabilités",
+            "commitment": "WANDERLATE s'engage à assurer la disponibilité et la sécurité de son service dans la mesure du possible.",
+            "notLiable": "Cependant, la société ne saurait être tenue responsable :",
+            "items": {
+                "interruptions": "des interruptions ou bugs temporaires du site ;",
+                "partners": "des fautes ou inexécutions commises par les prestataires partenaires ;",
+                "misuse": "des préjudices résultant d'une mauvaise utilisation du service."
+            },
+            "thirdParty": "WANDERLATE n'est pas responsable du contenu, des tarifs ou des politiques de tiers publiés sur sa plateforme."
+        },
+        "personalData": {
+            "title": "Données personnelles",
+            "gdpr": "WANDERLATE collecte et traite les données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).",
+            "purpose": "Les informations collectées sont utilisées uniquement pour la gestion des réservations, le service client et la sécurité.",
+            "rights": "L'Utilisateur dispose d'un droit d'accès, de rectification et de suppression via : privacy@wanderlate.com."
+        },
+        "intellectualProperty": {
+            "title": "Propriété intellectuelle",
+            "protection": "Tous les éléments du site (textes, visuels, logo, interface, base de données, code source) sont protégés par le droit d'auteur et restent la propriété exclusive de WANDERLATE.",
+            "prohibition": "Toute reproduction ou utilisation non autorisée est interdite."
+        },
+        "modifications": {
+            "title": "Modification des CGU",
+            "right": "WANDERLATE se réserve le droit de modifier à tout moment les présentes CGU.",
+            "notification": "Les utilisateurs seront informés par publication sur le site et devront accepter les nouvelles conditions pour continuer à utiliser le service."
+        },
+        "law": {
+            "title": "Droit applicable et juridiction",
+            "applicable": "Les présentes CGU sont régies par le droit français.",
+            "jurisdiction": "En cas de litige, et après tentative de résolution amiable, compétence exclusive est attribuée aux tribunaux de Paris."
+        }
+    },
+    "PrivacyPolicy": {
+        "title": "Politique de protection des données personnelles – WANDERLATE",
+        "controller": {
+            "title": "Responsable du traitement",
+            "description": "La société WANDERLATE SASU est responsable du traitement des données personnelles collectées via sa plateforme (www.wanderlate.com) et ses applications.",
+            "contact": "Coordonnées"
+        },
+        "dataCollected": {
+            "title": "Données collectées",
+            "description": "WANDERLATE collecte uniquement les données nécessaires au bon fonctionnement de la plateforme et à la réalisation des prestations :",
+            "items": {
+                "identity": "Informations d'identité : nom, prénom, date de naissance ;",
+                "contact": "Coordonnées : adresse postale, e-mail, numéro de téléphone ;",
+                "booking": "Informations de réservation : dates de voyage, prestations réservées, préférences ;",
+                "payment": "Données de paiement : informations bancaires, transactions sécurisées via prestataires certifiés PCI DSS ;",
+                "technical": "Données techniques : adresse IP, cookies, appareil et navigateur utilisés."
+            }
+        },
+        "purposes": {
+            "title": "Finalités du traitement",
+            "description": "Les données personnelles sont collectées pour :",
+            "items": {
+                "booking": "Permettre la réservation et le paiement sécurisé des prestations ;",
+                "management": "Assurer la gestion administrative et commerciale des réservations ;",
+                "support": "Fournir un service client efficace ;",
+                "security": "Garantir la sécurité et la prévention des fraudes ;",
+                "marketing": "Envoyer des communications marketing uniquement si l'utilisateur y a consenti."
+            }
+        },
+        "legalBasis": {
+            "title": "Base légale",
+            "description": "Le traitement des données est basé sur :",
+            "items": {
+                "contract": "L'exécution du contrat de réservation avec le client ;",
+                "legal": "Le respect des obligations légales et réglementaires (fiscales, comptables, sécurité) ;",
+                "consent": "Le consentement explicite de l'utilisateur pour l'envoi de communications marketing."
+            }
+        },
+        "sharing": {
+            "title": "Partage des données",
+            "description": "WANDERLATE peut être amenée à partager certaines informations avec :",
+            "items": {
+                "partners": "Les prestataires partenaires (hôtels, compagnies aériennes, agences locales) pour l'exécution des réservations ;",
+                "technical": "Les prestataires techniques (paiement sécurisé, hébergement web, messagerie) ;",
+                "authorities": "Les autorités légales si requis par la loi."
+            },
+            "noCommercial": "Aucun partage à des tiers commerciaux non liés à la prestation n'est réalisé sans consentement."
+        },
+        "retention": {
+            "title": "Conservation des données",
+            "description": "Les données sont conservées :",
+            "items": {
+                "commercial": "Durant la relation commerciale et jusqu'à 3 ans après la dernière interaction, pour respecter les obligations légales et fiscales ;",
+                "technical": "Les données techniques (cookies, journaux) sont conservées jusqu'à 13 mois maximum pour analyse statistique et amélioration du service."
+            }
+        },
+        "rights": {
+            "title": "Droits des utilisateurs",
+            "description": "Conformément au RGPD, chaque utilisateur dispose des droits suivants :",
+            "items": {
+                "access": "Accès : connaître les données collectées ;",
+                "rectification": "Rectification : corriger des informations inexactes ;",
+                "erasure": "Effacement : demander la suppression des données personnelles ;",
+                "limitation": "Limitation : restreindre le traitement dans certains cas ;",
+                "opposition": "Opposition : s'opposer à l'utilisation des données pour marketing ;",
+                "portability": "Portabilité : recevoir ses données dans un format structuré et réutilisable."
+            },
+            "contact": "Les demandes peuvent être adressées à privacy@wanderlate.com."
+        },
+        "security": {
+            "title": "Sécurité",
+            "measures": "WANDERLATE met en œuvre des mesures techniques et organisationnelles adaptées pour protéger les données contre la perte, la modification, l'accès non autorisé ou la divulgation.",
+            "pciDss": "Toutes les transactions financières sont traitées via des prestataires certifiés PCI DSS."
+        },
+        "cookies": {
+            "title": "Cookies et traceurs",
+            "description": "Le site utilise des cookies pour :",
+            "items": {
+                "functional": "garantir le bon fonctionnement du site ;",
+                "analytics": "analyser la fréquentation et améliorer l'expérience utilisateur ;",
+                "personalized": "proposer des offres personnalisées (avec consentement)."
+            },
+            "management": "L'utilisateur peut gérer ou refuser les cookies via les paramètres de son navigateur ou le bandeau cookie du site."
+        },
+        "contact": {
+            "title": "Contact et réclamation",
+            "description": "Pour toute question ou plainte relative au traitement des données personnelles :",
+            "cnil": "Si nécessaire, l'utilisateur peut également saisir la CNIL (Commission Nationale de l'Informatique et des Libertés) : www.cnil.fr"
+        }
+    },
+    "TermsOfSale": {
+        "title": "Conditions Générales de Vente (CGV) – WANDERLATE",
+        "purpose": {
+            "title": "Objet",
+            "description": "Les présentes Conditions Générales de Vente (CGV) ont pour objet de définir les droits et obligations de la société WANDERLATE et de ses utilisateurs dans le cadre de la mise à disposition de sa plateforme de réservation de voyages, séjours, hébergements et services associés.",
+            "intermediary": "WANDERLATE agit en qualité d'intermédiaire entre les prestataires partenaires (hôteliers, compagnies aériennes, transporteurs, agences locales, etc.) et les clients. À ce titre, WANDERLATE ne fournit pas directement les prestations réservées, sauf mention contraire expresse."
+        },
+        "identification": {
+            "title": "Identification"
+        },
+        "services": {
+            "title": "Prestations proposées",
+            "description": "La plateforme WANDERLATE permet la réservation de :",
+            "items": {
+                "stays": "Séjours, hébergements et voyages personnalisés ;",
+                "flights": "Billets d'avion, transferts et transports ;",
+                "activities": "Expériences, activités et services touristiques."
+            },
+            "providers": "Les offres présentées sont fournies par des prestataires tiers indépendants, responsables de la bonne exécution de leurs services."
+        },
+        "platform": {
+            "title": "Fonctionnement de la plateforme",
+            "role": "WANDERLATE agit en qualité d'opérateur de mise en relation.",
+            "contract": "Les réservations effectuées via la plateforme constituent un contrat direct entre le client et le prestataire concerné.",
+            "functions": "WANDERLATE intervient pour :",
+            "items": {
+                "facilitate": "Faciliter la réservation et le paiement sécurisé,",
+                "centralize": "Centraliser la communication entre le client et le prestataire,",
+                "guarantee": "Garantir la conformité légale des partenaires référencés."
+            }
+        },
+        "pricing": {
+            "title": "Tarifs et paiement",
+            "inclusive": "Les prix affichés incluent les taxes et frais applicables au moment de la réservation.",
+            "fullPayment": "Le paiement est exigé en totalité lors de la confirmation, sauf indication contraire.",
+            "security": "WANDERLATE utilise des prestataires de paiement agréés conformes à la directive européenne DSP2 (paiement sécurisé 3D Secure)."
+        },
+        "cancellation": {
+            "title": "Annulation et modification",
+            "conditions": "Les conditions d'annulation, de modification et de remboursement sont celles définies par le prestataire (hôtel, compagnie aérienne, agence locale…).",
+            "display": "WANDERLATE s'engage à les afficher clairement avant toute validation de commande.",
+            "fees": "Des frais de service peuvent s'appliquer en cas d'annulation ou de modification via la plateforme."
+        },
+        "responsibilities": {
+            "title": "Responsabilités",
+            "notLiable": "WANDERLATE ne saurait être tenue responsable :",
+            "items": {
+                "execution": "De la mauvaise exécution des prestations par les prestataires ;",
+                "forceMajeure": "Des cas de force majeure ou d'événements indépendants de sa volonté ;",
+                "customerErrors": "Des erreurs résultant d'informations fournies par le client."
+            },
+            "commitment": "En revanche, WANDERLATE s'engage à assurer le suivi des dossiers et la médiation en cas de litige entre le client et un prestataire référencé."
+        },
+        "personalData": {
+            "title": "Données personnelles",
+            "gdpr": "WANDERLATE collecte et traite les données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).",
+            "noSharing": "Aucune donnée n'est cédée à des tiers sans consentement.",
+            "rights": "Les utilisateurs disposent d'un droit d'accès, de rectification et de suppression via : privacy@wanderlate.com."
+        },
+        "law": {
+            "title": "Droit applicable et juridiction",
+            "applicable": "Les présentes CGV sont régies par le droit français.",
+            "jurisdiction": "En cas de litige, et après tentative de résolution amiable, la compétence est attribuée aux tribunaux de Paris."
+        },
+        "mediation": {
+            "title": "Médiation",
+            "description": "Conformément à l'article L.612-1 du Code de la consommation, le client peut recourir gratuitement à un médiateur du tourisme et du voyage (MTV) pour tout litige relatif à un service fourni par WANDERLATE."
+        }
     }
 }
